@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Doctor</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+
+    <header>
+    
+    </header>
+
+    <div class="container">
+        <h1>Find Doctor</h1>
+        
+        <div class="doctor-list">
+            <!-- Doctor 1 -->
+            <div class="doctor">
+                <img src="doctor1.jpg" alt="Dr. John Doe">
+                <h2>Dr. Kumkum Tripathy</h2>
+                <p>Specialization: Cardiologist</p>
+                <p>Available: Monday - Friday, 10 AM - 4 PM</p>
+                <button onclick="scheduleAppointment('Dr. John Doe')">Schedule Appointment</button>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="doctor">
+                <img src="doctor2.jpg" alt="Dr. Jane Smith">
+                <h2>Dr. Jane Smith</h2>
+                <p>Specialization: Neurologist</p>
+                <p>Available: Tuesday - Thursday, 12 PM - 6 PM</p>
+                <button onclick="scheduleAppointment('Dr. Jane Smith')">Schedule Appointment</button>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="doctor">
+                <img src="doctor3.jpg" alt="Dr. Alice Johnson">
+                <h2>Dr. Alice Johnson</h2>
+                <p>Specialization: Dermatologist</p>
+                <p>Available: Monday - Wednesday, 9 AM - 2 PM</p>
+                <button onclick="scheduleAppointment('Dr. Alice Johnson')">Schedule Appointment</button>
+            </div>
+
+            <!-- Doctor 4 -->
+            <div class="doctor">
+                <img src="doctor4.jpg" alt="Dr. Sushmita Agarwal">
+                <h2>Dr. Sushmita Agarwal</h2>
+                <p>Specialization: Orthopedic Surgeon</p>
+                <p>Available: Wednesday - Friday, 11 AM - 5 PM</p>
+                <button onclick="scheduleAppointment('Dr. Robert Brown')">Schedule Appointment</button>
+            </div>
+
+            <!-- Doctor 5 -->
+            <div class="doctor">
+                <img src="doctor5.jpg" alt="Dr. Emily Davis">
+                <h2>Dr. Emily Davis</h2>
+                <p>Specialization: Pediatrician</p>
+                <p>Available: Monday - Thursday, 8 AM - 3 PM</p>
+                <button onclick="scheduleAppointment('Dr. Emily Davis')">Schedule Appointment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment Modal -->
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="doctorName"></h2>
+            <form id="appointmentForm">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <label for="reason">Reason for Appointment:</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+                
+                <button type="submit">Confirm Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Healthcare Service. All rights reserved.</p>
+    </footer>
+
+    <script src="doctor.js"></script>
+</body>
+</html>
+
+

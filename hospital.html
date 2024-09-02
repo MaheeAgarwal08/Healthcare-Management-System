@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Hospital</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Find Hospital</h1>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for nearby hospitals...">
+            <button onclick="searchHospitals()">Search</button>
+        </div>
+
+        <div class="hospital-list" id="hospitalList">
+            <!-- Example Hospital 1 -->
+            <div class="hospital">
+                <img src="hospital4.jpg" alt="Hospital 1">
+                <h2>City Hospital</h2>
+                <p>Available Beds: <span>15</span></p>
+                <p>Services: Emergency, ICU, X-Ray, General Medicine</p>
+                <button onclick="bookBed('City Hospital')">Book a Bed</button>
+            </div>
+
+
+
+            <!-- Example Hospital 2 -->
+            <div class="hospital">
+                <img src="hospital5.jpg" alt="Hospital 2">
+                <h2>Green Valley Clinic</h2>
+                <p>Available Beds: <span>8</span></p>
+                <p>Services: General Medicine, Pediatrics, Surgery</p>
+                <button onclick="bookBed('Green Valley Clinic')">Book a Bed</button>
+            </div>
+
+            <!-- Example Hospital 3 -->
+            <div class="hospital">
+                <img src="hospital6.jpg" alt="Hospital 3">
+                <h2>Sunrise Medical Center</h2>
+                <p>Available Beds: <span>20</span></p>
+                <p>Services: Emergency, Cardiology, Neurology</p>
+                <button onclick="bookBed('Sunrise Medical Center')">Book a Bed</button>
+            </div>
+
+            
+                <!--Example hospital 4-->
+                <div class="hospital">
+                    <img src="hospital7.jpg" alt="Hospital 1">
+                    <h2>AIIMS Hospital</h2>
+                    <p>Available Beds: <span>15</span></p>
+                    <p>Services: Emergency, ICU, X-Ray, General Medicine</p>
+                    <button onclick="bookBed('City Hospital')">Book a Bed</button>
+                </div>
+
+                <!--Example hospital 5-->
+                <div class="hospital">
+                    <img src="hospital8.jpg" alt="Hospital 1">
+                    <h2>Manipal Hospital</h2>
+                    <p>Available Beds: <span>15</span></p>
+                    <p>Services: Emergency, ICU, X-Ray, General Medicine</p>
+                    <button onclick="bookBed('City Hospital')">Book a Bed</button>
+                </div>
+
+                <!--Example hospital 6-->
+                <div class="hospital">
+                    <img src="hospital9.jpg" alt="Hospital 1">
+                    <h2>Sum Hospital</h2>
+                    <p>Available Beds: <span>15</span></p>
+                    <p>Services: Emergency, ICU, X-Ray, General Medicine</p>
+                    <button onclick="bookBed('City Hospital')">Book a Bed</button>
+                </div>
+        </div>
+
+        <div id="bookingModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="hospitalName"></h2>
+                <form id="bookingForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="roomType">Room Type:</label>
+                    <select id="roomType" name="roomType">
+                        <option value="general">General</option>
+                        <option value="single">Single</option>
+                    </select>
+
+                    <button type="submit">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="ambulance-service">
+            <h2>Ambulance Services</h2>
+            <p>Call <strong>9999</strong> for emergency ambulance services.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Healthcare Service. All rights reserved.</p>
+    </footer>
+
+    <script src="hospital.js"></script>
+</body>
+</html>

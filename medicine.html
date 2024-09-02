@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Availability</title>
+    <link rel="stylesheet" href="medicine.css">
+</head>
+<body>
+    <header>
+        <h1>Medicine Availability</h1>
+        <h3>At the best prices.</h3>
+        <nav>
+            <ul>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <section class="medicine-list">
+        <!--<h2>Available Medicines</h2>-->
+        <div class="medicine" id="medicine-1">
+            <!--<img src="images/paracetamol.jpg" alt="Paracetamol">-->
+            <h3>Paracetamol</h3>
+            <p>Price: 80</p>
+            <button onclick="addToCart('Paracetamol', 10)">Add to Cart</button>
+        </div>
+        <div class="medicine" id="medicine-2">
+            <!--<img src="images/aspirin.jpg" alt="Aspirin">-->
+            <h3>Aspirin</h3>
+            <p>Price: 75</p>
+            <button onclick="addToCart('Aspirin', 15)">Add to Cart</button>
+        </div>
+        <div class="medicine" id="medicine-3">
+            <!--<img src="images/ibuprofen.jpg" alt="Ibuprofen">-->
+            <h3>Ibuprofen</h3>
+            <p>Price: 110</p>
+            <button onclick="addToCart('Ibuprofen', 20)">Add to Cart</button>
+        </div>
+
+        <div class="medicine" id="medicine-3">
+            <!--<img src="images/ibuprofen.jpg" alt="Ibuprofen">-->
+            <h3>Cetrizine</h3>
+            <p>Price: 60</p>
+            <button onclick="addToCart('Ibuprofen', 20)">Add to Cart</button>
+        </div>
+
+        <div class="medicine" id="medicine-3">
+            <!--<img src="images/ibuprofen.jpg" alt="Ibuprofen">-->
+            <h3>Norfloxacin</h3>
+            <p>Price: 115</p>
+            <button onclick="addToCart('Ibuprofen', 20)">Add to Cart</button>
+        </div>
+
+        <div class="medicine" id="medicine-3">
+            <!--<img src="images/ibuprofen.jpg" alt="Ibuprofen">-->
+            <h3>Namcold</h3>
+            <p>Price: 120</p>
+            <button onclick="addToCart('Ibuprofen', 20)">Add to Cart</button>
+        </div>
+        <div class="medicine" id="medicine-3">
+            <!--<img src="images/ibuprofen.jpg" alt="Ibuprofen">-->
+            <h3>Ezithromycin</h3>
+            <p>Price: 95</p>
+            <button onclick="addToCart('Ibuprofen', 20)">Add to Cart</button>
+        </div>
+        <div class="medicine" id="medicine-3">
+            <!--<img src="images/ibuprofen.jpg" alt="Ibuprofen">-->
+            <h3>Atorvastatin</h3>
+            <p>Price: 90</p>
+            <button onclick="addToCart('Ibuprofen', 20)">Add to Cart</button>
+        </div>
+
+        <div class="medicine" id="medicine-3">
+            <!--<img src="images/ibuprofen.jpg" alt="Ibuprofen">-->
+            <h3>Levosis-M</h3>
+            <p>Price: 110</p>
+            <button onclick="addToCart('Ibuprofen', 20)">Add to Cart</button>
+        </div>
+
+        <div class="medicine" id="medicine-3">
+            <!--<img src="images/ibuprofen.jpg" alt="Ibuprofen">-->
+            <h3>Chrocin</h3>
+            <p>Price: 95</p>
+            <button onclick="addToCart('Ibuprofen', 20)">Add to Cart</button>
+        </div>
+        <!-- Add more medicines as needed -->
+    </section>
+
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </ul>
+        <p id="total-price">Total: 0</p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <script src="medicine.js"></script>
+</body>
+</html>
